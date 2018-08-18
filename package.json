@@ -1,0 +1,20 @@
+{
+  "name": "technical_documentation_page",
+  "version": "1.0.0",
+  "description": "\"This is a documentation page for Python\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GhanmiKhir/documentation_page.git"
+  },
+  "keywords": ["python", "documentation", "freecodecamp"],
+  "author": "ghanmi khir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GhanmiKhir/documentation_page/issues"
+  },
+  "homepage": "https://github.com/GhanmiKhir/documentation_page#readme"
+}

@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300b,400,500" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Python documentation page</title>
+</head>
+<body>
+  <nav id="navbar">
+    <header>Python Documentation</header>
+      <div class="line-seperation" ></div>
+      <a href="#introduction" class="nav-link" rel="internal">Introduction</a>
+      <div class="line-seperation" ></div>
+      <a href="#hello_world" class="nav-link" rel="internal">Hello world</a>
+      <div class="line-seperation"></div>
+      <a href="#variables" class="nav-link" rel="internal">Variables</a>
+      <div class="line-seperation"></div>
+      <a href="#variable_types" class="nav-link" rel="internal">Variable types</a>
+      <div class="line-seperation"></div>
+      <a href="#global_variables" class="nav-link" rel="internal">Global variables</a>
+      <div class="line-seperation"></div>
+      <a href="#constants" class="nav-link" rel="internal">Constants</a>
+      <div class="line-seperation"></div>
+      <a href="#functions" class="nav-link" rel="internal">Functions</a>
+      <div class="line-seperation"></div>
+      <a href="#syntax_of_a_function" class="nav-link" rel="internal">Syntax of a function</a>
+      <div class="line-seperation"></div>
+      <a href="#data_types" class="nav-link" rel="internal">Data types</a>
+      <div class="line-seperation"></div>
+      <a href="#reference" class="nav-link" rel="internal">Reference</a>
+      <div class="line-seperation"></div>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="introduction">
+      <header class="topic">Introduction</header>
+      <p class="description">
+        Python is a clear and powerful object-oriented programming language, comparable to Perl, Ruby, Scheme, or Java.<br>
+        Some of Python's notable features:
+        <ul>
+          <li>Uses an elegant syntax, making the programs you write easier to read.</li>
+          <li>Is an easy-to-use language that makes it simple to get your program working.</li>
+          <li>Is easily extended by adding new modules implemented in a compiled language such as C or C++.</li>
+        </ul>
+      </p>
+    </section>
+    <section class="main-section" id="hello_world">
+      <header class="topic">Hello world</header>
+      <p class="description">
+        Python is a very simple language, and has a very straightforward syntax. It encourages programmers to program without boilerplate (prepared) code. The simplest directive in Python is the "print" directive - it simply prints out a line (and also includes a newline, unlike in C).<br>
+        Here's an example of how to write "Hello world" in python:<br>
+        <code class="code-snippet">
+          print("Hello world")
+        </code>
+      </p>
+    </section>
+    <section class="main-section" id="variables">
+      <header class="topic">Variables</header>
+      <p class="description">
+        Unlike other programming languages, Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.<br>
+        Here's an example:<br>
+        <code class="code-snippet">
+          x = 5
+          y = "John"
+          print(x)
+          print(y)
+        </code>
+      </p>
+    </section>
+    <section class="main-section" id="variable_types">
+      <header class="topic">Variable types</header>
+      <p class="description">
+        Variables do not need to be declared with any particular type and can even change type after they have been set:<br>
+        <code class="code-snippet">
+          x = 4 <span class="comment"> # x is of type int</span>
+          x = "Sally" <span class="comment"># x is now of type str</span>
+          print(x)
+        </code>
+      </p>
+    </section>
+    <section class="main-section" id="global_variables">
+      <header class="topic">Global variables</header>
+      <p class="description">
+        In Python, a variable declared outside of the function or in global scope is known as global variable. This means, global variable can be accessed inside or outside of the function.<br>
+        Here's an example on how a global variable is created in Python:<br>
+        <code class="code-snippet">
+          x = "global"
+
+          def foo():
+          print("x inside :", x)
+
+          foo()
+          print("x outside:", x)
+        </code>
+      </p>
+    </section>
+    <section class="main-section" id="constants">
+      <header class="topic">Constants</header>
+      <p class="description">
+        In Python, constants are usually declared and assigned on a module. Here, the module means a new file containing variables, functions etc which is imported to main file. Inside the module, constants are written in all capital letters and underscores separating the words.<br>
+        Here's an example on how a constant is created in Python:<br>
+        <code class="code-snippet">
+          PI = 3.14
+          GRAVITY = 9.8
+        </code>
+      </p>
+    </section>
+    <section class="main-section" id="functions">
+      <header class="topic">Functions</header>
+      <p class="description">
+        In Python, function is a group of related statements that perform a specific task. Functions help break our program into smaller and modular chunks. As our program grows larger and larger, functions make it more organized and manageable. Furthermore, it avoids repetition and makes code reusable.
+      </p>
+    </section>
+    <section class="main-section" id="syntax_of_a_function">
+      <header class="topic">Syntax of a function</header>
+      <p class="description">
+        <code class="code-snippet">
+          def function_name(parameters):
+        	"""docstring"""
+        	statement(s)
+        </code>
+        Above shown is a function definition which consists of following components.
+        <ol>
+          <li>Keyword <strong>def</strong> marks the start of function header.</li>
+          <li>A function name to uniquely identify it. Function naming follows the same <a href="https://www.programiz.com/python-programming/keywords-identifier#rules" target="_blank">rules of writing identifiers in Python</a>.</li>
+          <li>Parameters (arguments) through which we pass values to a function. They are optional.</li>
+          <li>A colon <strong>:</strong> to mark the end of function header.</li>
+          <li>Optional documentation string (docstring) to describe what the function does.</li>
+          <li>One or more valid python statements that make up the function body. Statements must have same indentation level (usually 4 spaces).</li>
+          <li>An optional <strong>return</strong> statement to return a value from the function.</li>
+        </ol>
+      </p>
+    </section>
+    <section class="main-section" id="data_types">
+      <header class="topic">Data types</header>
+      <p class="description">
+        Python's built-in (or standard) data types can be grouped into several classes. Sticking to the hierarchy scheme used in the official Python documentation these are numeric types, sequences, sets and mappings:</p>
+        <ul>
+          <li>boolean: the type of the built-in values <strong>True</strong> and <strong>False</strong>.</li>
+        </ul>
+        <p>Nymeric types:</p>
+        <ul>
+          <li>int: Integers; equivalent to C longs in Python 2.x, non-limited length in Python 3.x</li>
+          <li>long: Long integers of non-limited length; exists only in Python 2.x</li>
+          <li>float: Floating-Point numbers, equivalent to C doubles</li>
+          <li>complex: Complex Numbers</li>
+        </ul>
+        <p>Sequences:</p>
+        <ul>
+          <li>str: String; represented as a sequence of 8-bit characters in Python 2.x</li>
+          <li>bytes: a sequence of integers in the range of 0-255; only available in Python 3.x</li>
+          <li>byte array: like bytes, but mutable (see below); only available in Python 3.x</li>
+          <li>list</li>
+          <li>tuple</li>
+        </ul>
+        <p>Sets:</p>
+        <ul>
+          <li>set: an unordered collection of unique objects; available as a standard type since Python 2.6</li>
+          <li>frozen set: like set, but immutable (see below); available as a standard type since Python 2.6</li>
+        </ul>
+        <p>Mappings:</p>
+        <ul>
+          <li>dict: Python dictionaries, also called hashmaps or associative arrays</li>
+        </ul>
+      </p>
+    </section>
+    <section class="main-section" id="reference">
+      <header class="topic">Reference</header>
+      <p class="description">
+        <ul>
+          <li>All the documentation in this page is taken from <a href="https://docs.python.org/3/index.html">Python 3.7.0 documentation</a>. </li>
+        </ul>
+
+    </section>
+  </main>
+</body>
+</html>
